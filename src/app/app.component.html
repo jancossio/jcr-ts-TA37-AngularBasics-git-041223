@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  
+    <body>
+      <div class="container">
+        <div class="calc" style="background-color: rgb(43, 150, 139);">
+          <div class="row">
+            <div class="col-12">
+              <div class="display" type="text">{{calculo}}</div>
+            </div>
+          </div>
+          <div class="row gx-0 btn-panel">
+              <div class="col-9 values">
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('9')">9</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('8')">8</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('7')">7</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('6')">6</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('5')">5</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('4')">4</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('3')">3</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('2')">2</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('1')">1</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('.')">.</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('0')">0</button></div>
+              <div><button class="btn btn-num btn-secondary" (click)="agregarValor('00')">00</button></div>                
+              </div>
+              <div class="col-3 operts">
+              <div><button class="btn btn-op btn-secondary" (click)="borrar()">DEL</button></div>
+              <div><button class="btn btn-op btn-secondary" (click)="operacion('/')">/</button></div>
+              <div><button class="btn btn-op btn-secondary" (click)="operacion('x')">X</button></div>
+              <div><button class="btn btn-op btn-secondary" (click)="operacion('-')">-</button></div>
+              <div><button class="btn btn-op btn-secondary" (click)="operacion('+')">+</button></div>
+              <div><button class="btn btn-op btn-secondary" (click)="calcular()">=</button></div>              
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

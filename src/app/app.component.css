@@ -1,0 +1,55 @@
+body{
+    background-color: turquoise;
+    height: 100vh;
+}
+
+.container{
+    width: 430px;
+    margin-top: 30px;
+}
+
+.calc{
+    height: 495px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(116, 116, 116);
+}
+
+.display{
+    height: 70px;
+    font-size: x-large;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+.values{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.operts{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.btn-num{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    font-size: x-large;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-op{
+    width: 90px;
+    height: 60px;
+    margin: 5px;
+    font-size: larger;
+    background-color: turquoise;
+    border: none;
+    border-radius: 5px;
+}
